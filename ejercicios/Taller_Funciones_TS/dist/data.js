@@ -1,0 +1,146 @@
+const dev1 = {
+    id: 1,
+    nombre: "Valentina Torres",
+    rol: "fullstack",
+    nivel: "senior",
+    stack: ["TypeScript", "React", "Node.js", "PostgreSQL"],
+    disponible: true,
+    email: "v.torres@devteam.co",
+};
+const dev2 = {
+    id: 2,
+    nombre: "Sebastián Molina",
+    rol: "backend",
+    nivel: "mid",
+    stack: ["Node.js", "Express", "MongoDB", "Docker"],
+    disponible: false,
+    email: "s.molina@devteam.co",
+};
+const dev3 = {
+    id: 3,
+    nombre: "Camila Ríos",
+    rol: "frontend",
+    nivel: "junior",
+    stack: ["TypeScript", "React", "CSS"],
+    disponible: true,
+    email: "c.rios@devteam.co",
+};
+const dev4 = {
+    id: 4,
+    nombre: "Andrés Peña",
+    rol: "QA",
+    nivel: "lead",
+    stack: ["Cypress", "Jest", "Postman", "TypeScript"],
+    disponible: true,
+    email: "a.pena@devteam.co",
+};
+export const equipo = [dev1, dev2, dev3, dev4];
+const bug1 = {
+    id: 101,
+    titulo: "Login falla en Safari móvil",
+    descripcion: "El botón de login no responde en Safari versión 16 en iOS",
+    prioridad: "crítica",
+    estado: "abierto",
+    idAsignado: 1,
+    fechaReporte: [12, 3, 2025],
+    reproducible: true,
+    ambiente: "producción",
+};
+const bug2 = {
+    id: 102,
+    titulo: "Tabla de usuarios no pagina correctamente",
+    descripcion: "Al pasar de la página 3 en adelante los datos se repiten",
+    prioridad: "alta",
+    estado: "en revisión",
+    idAsignado: 3,
+    fechaReporte: [18, 3, 2025],
+    reproducible: true,
+    ambiente: "staging",
+};
+const bug3 = {
+    id: 103,
+    titulo: "Timeout en endpoint /api/reportes",
+    descripcion: "El endpoint demora más de 30 segundos con más de 500 registros",
+    prioridad: "alta",
+    estado: "abierto",
+    idAsignado: 2,
+    fechaReporte: [20, 3, 2025],
+    reproducible: false,
+    ambiente: "producción",
+};
+const bug4 = {
+    id: 104,
+    titulo: "Typo en mensaje de confirmación",
+    descripcion: "Dice 'guardardo' en vez de 'guardado'",
+    prioridad: "baja",
+    estado: "resuelto",
+    idAsignado: 3,
+    fechaReporte: [22, 3, 2025],
+    reproducible: true,
+    ambiente: "desarrollo",
+};
+const bug5 = {
+    id: 105,
+    titulo: "Memory leak en dashboard de métricas",
+    descripcion: "El componente no libera suscripciones al desmontar",
+    prioridad: "crítica",
+    estado: "abierto",
+    idAsignado: 1,
+    fechaReporte: [25, 3, 2025],
+    reproducible: true,
+    ambiente: "producción",
+};
+export const bugs = [bug1, bug2, bug3, bug4, bug5];
+const pr1 = {
+    id: 201,
+    titulo: "feat: autenticación con Google OAuth",
+    rama: "feature/google-oauth",
+    estado: "abierto",
+    idAutor: 1,
+    lineasAgregadas: 320,
+    lineasEliminadas: 45,
+    archivosModificados: 8,
+    revisores: [2, 4],
+};
+const pr2 = {
+    id: 202,
+    titulo: "fix: corregir paginación en tabla de usuarios",
+    rama: "fix/paginacion-usuarios",
+    estado: "aprobado",
+    idAutor: 3,
+    lineasAgregadas: 28,
+    lineasEliminadas: 15,
+    archivosModificados: 2,
+    revisores: [1],
+};
+const pr3 = {
+    id: 203,
+    titulo: "refactor: optimizar queries de reportes",
+    rama: "refactor/queries-reportes",
+    estado: "borrador",
+    idAutor: 2,
+    lineasAgregadas: 180,
+    lineasEliminadas: 210,
+    archivosModificados: 5,
+    revisores: [],
+};
+const pr4 = {
+    id: 204,
+    titulo: "chore: actualizar dependencias Q1 2025",
+    rama: "chore/deps-q1",
+    estado: "rechazado",
+    idAutor: 4,
+    lineasAgregadas: 12,
+    lineasEliminadas: 12,
+    archivosModificados: 1,
+    revisores: [1, 2],
+};
+export const proyecto = {
+    id: 1,
+    nombre: "DevTrack Platform",
+    repositorio: "https://github.com/devteam/devtrack",
+    stack: ["TypeScript", "React", "Node.js", "PostgreSQL", "Docker"],
+    bugs: [bug1, bug2, bug3, bug4, bug5],
+    pullRequests: [pr1, pr2, pr3, pr4],
+};
+//# sourceMappingURL=data.js.map
