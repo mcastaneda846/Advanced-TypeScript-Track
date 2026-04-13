@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F5F5F0;
+}
+
+/* contenedor principal */
+.app-container {
+  padding: 30px;
+}
+
+/* título principal */
+.app-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
